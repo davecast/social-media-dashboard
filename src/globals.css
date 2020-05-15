@@ -1,0 +1,133 @@
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(203, 89%, 53%);
+  --twitter: hsl(195, 100%, 50%);
+  --instagram-1: hsl(37, 97%, 70%);
+  --instagram-2: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+  --grey: #b9bbc6;
+  --grey-b: #6f717e;
+  --card: #f0f3fa;
+  --body-back: #fff;
+  --body-text: #1d2029;
+  --header: #f7f7f7;
+  --inner: #b9bbc6;
+  --inner-2: #b9bbc6;
+  --dot: #f0f3fa;
+}
+/*GLOBAL*/
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 250px;
+}
+
+main {
+  color: var(--body-text);
+  background-color: var(--body-back);
+}
+
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*LAYOUT*/
+.wrapper {
+  padding: 0 30px;
+}
+.grid {
+  display: grid;
+  grid-gap: 25px 0;
+}
+.section--title {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: var(--grey-b);
+}
+
+@media screen and (min-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.is__darkmode {
+  --card: hsl(228, 28%, 20%);
+  --grey: hsl(228, 34%, 66%);
+  --grey-b: hsl(228, 34%, 66%);
+  --body-back: hsl(230, 17%, 14%);
+  --body-text: #fff;
+  --header: hsl(232, 19%, 15%);
+  --inner: #b9bbc6;
+  --inner-2: hsl(163, 72%, 41%);
+  --dot: hsl(228, 28%, 20%);
+}
+.is__ligthmode {
+  --grey: #b9bbc6;
+  --grey-b: #6f717e;
+  --card: #f0f3fa;
+  --body-back: #fff;
+  --body-text: #1d2029;
+  --header: #f7f7f7;
+  --inner: #b9bbc6;
+  --inner-2: #b9bbc6;
+  --dot: #f0f3fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card: hsl(228, 28%, 20%);
+    --grey: hsl(228, 34%, 66%);
+    --grey-b: hsl(228, 34%, 66%);
+    --body-back: hsl(230, 17%, 14%);
+    --body-text: #fff;
+    --header: hsl(232, 19%, 15%);
+    --inner: #b9bbc6;
+    --inner-2: hsl(163, 72%, 41%);
+    --dot: hsl(228, 28%, 20%);
+  }
+}/*
+@media (prefers-color-scheme: light) {
+  :root {
+    --grey: #b9bbc6;
+    --grey-b: #6f717e;
+    --card: #f0f3fa;
+    --body-back: #fff;
+    --body-text: #1d2029;
+    --header: #f7f7f7;
+    --inner: #b9bbc6;
+    --inner-2: #b9bbc6;
+    --dot: #f0f3fa;
+  }
+}*/
+
+/*
+Very Dark Blue (BG): hsl(230, 17%, 14%)
+Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+Desaturated Blue (Text): hsl(228, 34%, 66%)
+White (Text): hsl(0, 0%, 100%)
+*/
