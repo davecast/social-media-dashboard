@@ -20,12 +20,12 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  padding-bottom: 250px;
 }
 
 main {
   color: var(--body-text);
   background-color: var(--body-back);
+  min-height: 100vh;
 }
 
 p {
